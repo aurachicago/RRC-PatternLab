@@ -23,7 +23,9 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page"><a>Catalog</a></li>
+                                <li class="breadcrumb-item"><a href="#">Education Catalog</a></li>
+                                <li class="breadcrumb-item"><a href="#">Course Details</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a>Cart</a></li>
                             </ol>
                         </nav> 
                     </div>   
@@ -39,43 +41,113 @@
 
                         <h4>Billing Details</h4>
                        
-                    <div class="card ">
-                        <div class="card-body">
-                            <p class="card-text">Jane Doe</p>
-                            <p>223 Jackson St. Suite 11111</p>
-                            <p>Chicago, IL 60614</p>
-                            <p>United States</p>
-                            <a href="#" class="btn btn-primary">Button</a>
+                        <div class="card ">
+                            <div class="card-body">
+                                <p class="card-text">Jane Doe</p>
+                                <p>223 Jackson St. Suite 11111</p>
+                                <p>Chicago, IL 60614</p>
+                                <p>United States</p>
+                                <a href="#" class="badge badge-primary">Edit Address</a>
+                            </div>
+                        
                         </div>
-                      
-                    </div>
 
-                    <h3>Payment</h3>
+                        <h3>Payment</h3>
 
-                    <div class="card pt-3">
+                        <div class="card pt-3">
                             <div class="card-body">
                                 <form>
                                     <div class="row">
                                         <div class="col-12">
-                                        <input type="text" class="form-control" placeholder="Card Number">
+                                        <input type="text" class="form-control" placeholder="0000-0000-0000-0000">
+                                        </div>
+                                        <div class="col">
+                                        <input type="text" class="form-control" placeholder="First name">
                                         </div>
                                         <div class="col">
                                         <input type="text" class="form-control" placeholder="Last name">
                                         </div>
-                                        <div class="col">
-                                                <input type="text" class="form-control" placeholder="Last name">
-                                                </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
+
+                        <button type="button" class="btn btn-primary btn-lg btn-block mt-4">Complete Order</button>
+
+
                     </div>
-                    <div class="row col-8">
+                    <div class="col-8 ">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Button</a>
+                                <h5 class="card-title">Shopping Cart</h5>
+
+                                <hr></hr>
+
+                                <div class="p-3 row justify-content-between">
+                                    <p class="card-text"> 2016 Sell-a-bration Audio Library</p>
+                                    <h6 class="text-secondary">$129</h6>
+                                    <i class="fas fa-trash-alt text-danger"></i>
+                                </div>
+                                
+
+
+                                <hr></hr>
+
+                                <div class="p-3 row justify-content-between">
+                                    <p class="card-text">Buying and Selling Income Properties</p>
+                                    <h6 class="text-secondary">$225</h6>
+                                    <i class="fas fa-trash-alt text-danger"></i>
+                                </div>
+
+                                <hr></hr>
+
+                                <div class="">
+
+                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                        Have a Coupon?
+                                    </button>
+                                    
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card card-body">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Coupon Code" aria-label="Coupon Code" aria-describedby="button-addon2">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add Coupon</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+
+                                </div>
+
+                                <hr></hr>
+
+
+                            
+                                <div class="p-3 row justify-content-between">
+                                    <p class="card-text"> Subtotal</p>
+                                    <h6 class="text-secondary">$354</h6>
+                                </div>
+                            
+                                <div class="p-3 row justify-content-between">
+                                    <p class="card-text"> Shipping</p>
+                                    <h6 class="text-secondary">$0.00</h6>
+                                </div>
+                            
+                                <div class="p-3 row justify-content-between">
+                                    <p class="card-text">Tax</p>
+                                    <h6 class="text-secondary">$0.00</h6>
+                                </div>
+
+                                <hr></hr>
+
+                                <div class="p-3 row justify-content-between">
+                                    <h3 class="card-text">Total</h3>
+                                    <h6 class="text-secondary">$354</h6>
+                                </div>
+                            
+                                
                             </div>
                         </div>
                     </div>
